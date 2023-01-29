@@ -12,6 +12,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  font-size: 1.3rem;
 }
 
 .header p {
@@ -38,7 +40,7 @@ body {
 }
 
 .section-one img {
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 .section-one h1 {
@@ -68,7 +70,7 @@ body {
 
 .form input {
   border: none;
-  /* outline: none; */
+  outline: none;
   background: transparent;
   width: 60%;
   font-size: 1.1rem;
@@ -160,6 +162,104 @@ hr {
 
 .review p {
   font-size: 1.8rem;
+}
+
+/****************************SECTION-THREE*************************************/
+.section-three {
+  text-align: center;
+  background-color: rgb(3, 78, 78);
+  padding: 3rem;
+}
+
+.section-three h4 {
+  font-size: 4rem;
+  margin: 4rem auto 2rem;
+}
+
+.section-three h5 {
+  margin: 2rem auto 2rem;
+  font-size: 1.8rem;
+}
+
+.section-three p {
+  margin: 3rem auto 4rem;
+  max-width: 25%;
+}
+
+/****************************SECTION-FOUR************************************/
+
+.section-four {
+  margin: 0 auto 2rem;
+  padding-top: 6rem;
+  text-align: center;
+}
+
+.section-four h6 {
+  margin: 0 0 4rem;
+  font-size: 4rem;
+  position: relative;
+  right: 30%;
+}
+
+.collapsible {
+  text-align: left;
+  width: 50%;
+  margin: auto;
+}
+
+.content {
+  font-size: 1.4rem;
+  max-width: 90%;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapse {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  padding: 0;
+  max-width: 90%;
+}
+
+.collapse:hover {
+  color: rgb(175, 175, 175);
+}
+
+.collapse::before {
+  content: '+';
+  border-style: none;
+  border-radius: 50px;
+  background-color: black;
+  border-width: 2px;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: 25%;
+  text-align: center;
+  line-height: 100%;
+  font-weight: 100;
+}
+
+.section-four hr {
+  width: 55%;
+}
+
+.footer-links {
+  position: relative;
+  left: 20%;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+  font-size: 1.3rem;
+}
+
+.footer-links a {
+  margin: 3rem;
+  color: azure;
 }
 
 
