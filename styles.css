@@ -9,20 +9,21 @@ body {
 /********************HEADER STYLE*************************/
 
 .header {
-  background-color: rgb(27, 51, 42);
+  background-color: rgb(22, 48, 13);
   height: 3.5rem;
   width: 100%;
   position: fixed;
   z-index: 9999;
+  display: flex;
 }
 
 .header p {
   margin: auto;
   text-align: center;
-  transform: translateY(50%);
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   width: 80%;
   max-height: 80%;
+  align-self: center;
 }
 
 .header button {
@@ -31,6 +32,7 @@ body {
   border: none;
   background: transparent;
   font-size: 1.1rem;
+  align-self: center;
 }
 
 .header button:hover {
@@ -38,11 +40,16 @@ body {
   color: rgb(134, 134, 134);
 }
 
+.header a {
+  color: white;
+  font-weight: 900;
+}
+
 /*****************************SECTION-ONE*****************************************/
 
 .section-one {
   text-align: center;
-  background: linear-gradient(0deg, #18221d, #098F9C);
+  background: linear-gradient(0deg, #18221d, #098f9c);
 }
 
 .section-one img {
@@ -226,7 +233,7 @@ hr {
   border: none;
   background: transparent;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: bold;
   text-align: left;
   padding: 0;
@@ -234,7 +241,7 @@ hr {
 }
 
 .collapse:hover {
-  color: rgb(175, 175, 175);
+  color: rgb(190, 190, 190);
 }
 
 .collapse::before {
@@ -257,11 +264,12 @@ hr {
 }
 
 .footer-links {
-  position: relative;
-  left: 20%;
+  position: absolute;
   margin-top: 4rem;
-  margin-bottom: 8rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  font-weight: 900;
+  right: 10rem;
+  padding-bottom: 10rem;
 }
 
 .footer-links a {
@@ -271,11 +279,165 @@ hr {
 
 /******************SMALL-DEVICE-CSS**************************/
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
+
   .header p {
     margin: 10px;
     text-align: left;
     font-size: 0.7rem;
+  }
+
+  /***********SECTION-ONE****************/
+
+  .section-one h1 {
+    max-width: 90%;
+    font-size: 3rem;
+  }
+
+  .section-one h2 {
+    max-width: 95%;
+    font-size: 1.2rem;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    height: 8rem;
+    border: none;
+  }
+
+  .form input {
+    width: 85%;
+    height: 50%;
+    margin: auto;
+    font-size: 0.9rem;
+    text-align: left;
+    transform: translate(0, 20%);
+    border: solid;
+    border-radius: 40px;
+    border-width: 2px;
+  }
+
+  .form button {
+    height: 50%;
+    width: 95%;
+    margin: auto;
+    margin-top: 1.5rem;
+  }
+
+  .section-one p {
+    margin: 2rem auto 1rem;
+    max-width: 90%;
+  }
+
+  /*************SECTION-TWO***************/
+
+  .laptop {
     max-width: 70%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .container div {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .container h3 {
+    padding-bottom: 5px;
+    font-size: 1.1rem;
+  }
+
+  .container p {
+    font-size: 1rem;
+  }
+
+  .logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .logos img {
+    width: 40%;
+    padding: 10px;
+  }
+
+  .review h4 {
+    font-size: 2rem;
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .review p {
+    font-size: 1rem;
+  }
+
+  /*************SECTION-THREE************/
+
+  .section-three h4 {
+    font-size: 2rem;
+  }
+
+  .section-three h5 {
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 90%;
+  }
+
+  .section-three p {
+    max-width: 90%;
+    font-size: 0.8rem;
+  }
+
+  /*************SECTION-FOUR**************/
+
+  .section-four {
+    margin: 0;
+  }
+
+  .section-four h6 {
+    font-size: 2rem;
+  }
+
+  .section-four hr {
+    width: 100%;
+  }
+
+  .collapsible {
+    width: 75%;
+    margin-left: 2rem;
+  }
+
+  .collapse {
+    font-size: 1.5rem;
+  }
+
+  .collapse::before {
+    font-size: 1.9rem;
+    right: 2%;
+  }
+
+  .content {
+    font-size: 1rem;
+  }
+
+  .footer-links {
+    position: absolute;
+    font-size: 0.8rem;
+    right: 1rem;
+  }
+
+  .footer-links a {
+    margin: auto;
+    padding: 0.7rem;
   }
 }
