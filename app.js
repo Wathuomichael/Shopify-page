@@ -1,3 +1,16 @@
+const originalHeader = document.querySelector(".original-header");
+const newHeader = document.querySelector(".new-header");
+
+window.onscroll = function () {
+  if (window.pageYOffset > originalHeader.offsetTop) {
+    originalHeader.style.display = "none";
+    newHeader.style.display = "flex";
+  } else {
+    originalHeader.style.display = "flex";
+    newHeader.style.display = "none";
+  }
+};
+
 const closeButtons = document.querySelectorAll(".close");
 for (let i = 0; i < closeButtons.length; i++) {
   closeButtons[i].addEventListener("click", function () {
